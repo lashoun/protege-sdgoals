@@ -21,6 +21,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estNonRecyclable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estNonRecyclable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable"/>
+    
+
+
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#executeCollecte -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#executeCollecte"/>
@@ -64,6 +79,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#BienConsommation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#BienConsommation"/>
@@ -81,6 +104,12 @@
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie"/>
     
 
 
@@ -104,6 +133,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Li-ion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Li-ion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiCd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiCd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiMh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiMh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture">
@@ -120,9 +173,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Plomb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Plomb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Secteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Secteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie"/>
+    </owl:Class>
     
 
 
@@ -130,6 +199,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Service">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#BienConsommation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Solaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Solaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie"/>
     </owl:Class>
 </rdf:RDF>
 
