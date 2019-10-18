@@ -25,7 +25,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estNonRecyclable">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable"/>
     </owl:ObjectProperty>
     
 
@@ -68,6 +68,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#taille -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#taille">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -93,17 +101,65 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Collectivite -->
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Collectivite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Institution"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_dangereux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_dangereux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet -->
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_industriel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_industriel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_liquide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_liquide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_journaux_emballages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_journaux_emballages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_ordure_menagere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_ordure_menagere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
+    </owl:Class>
     
 
 
@@ -115,8 +171,30 @@
 
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Institution"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_ebay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_ebay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise"/>
     </owl:Class>
     
 
@@ -124,12 +202,6 @@
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Humain -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Humain"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Institution -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Institution"/>
     
 
 
@@ -165,10 +237,170 @@
     
 
 
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_agneau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_agneau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_banane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_banane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_bouteille_eau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_bouteille_eau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_bouteille_vin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_bouteille_vin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_canette_soda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_canette_soda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_jujube -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_jujube">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_kiwai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_kiwai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_paquet_biscuit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_paquet_biscuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_patate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_patate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_pot_confiture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_pot_confiture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_steak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_steak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#BienConsommation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_ampoule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_ampoule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_calculatrice_solaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_calculatrice_solaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_cartouche_imprimante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_cartouche_imprimante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_gobelet_plastique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_gobelet_plastique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_livre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_livre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_ordinateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_ordinateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_telecommande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_telecommande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_telephone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_telephone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_vetement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_vetement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
     </owl:Class>
     
 
@@ -187,18 +419,65 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Secteur -->
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_compost -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Secteur">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_compost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Service -->
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_dechet_vert -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Service">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#BienConsommation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_dechet_vert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_decheterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_decheterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_bretagne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_bretagne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_ile_de_france"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_ile_de_france -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_ile_de_france">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Secteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Secteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie"/>
     </owl:Class>
     
 
@@ -208,6 +487,25 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Solaire">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Energie"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_ebay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_production"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
