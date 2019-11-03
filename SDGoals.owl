@@ -21,20 +21,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estNonRecyclable -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estNonRecyclable">
-        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable"/>
-    
-
-
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#executeCollecte -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#executeCollecte"/>
@@ -64,12 +50,6 @@
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#taille -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#taille"/>
     
 
 
@@ -181,6 +161,14 @@
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special_cartouche -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special_cartouche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special_sac_plastique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special_sac_plastique">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special"/>
     </owl:Class>
     
@@ -425,6 +413,20 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_papier_carton_plastique_metal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_sac_plastique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet_sac_plastique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Objet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special_sac_plastique"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
