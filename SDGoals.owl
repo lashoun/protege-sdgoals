@@ -24,7 +24,6 @@
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estNonRecyclable -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estNonRecyclable">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#estRecyclable"/>
     </owl:ObjectProperty>
     
@@ -62,17 +61,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produit -->
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produit"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
     
 
 
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#taille -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#taille">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#taille"/>
     
 
 
@@ -139,9 +136,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_journaux_emballages -->
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_divers -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_journaux_emballages">
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_divers">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
     </owl:Class>
     
@@ -155,9 +152,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_papier_carton_plastique_metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_papier_carton_plastique_metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_special">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_verre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_verre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_vert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_vert">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager"/>
     </owl:Class>
     
@@ -179,6 +200,30 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_ampoule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_ampoule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_batterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_batterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_cartouche_imprimante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_cartouche_imprimante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte"/>
     </owl:Class>
     
 
@@ -205,30 +250,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Li-ion -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Li-ion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiCd -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiCd">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiMh -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#NiMh">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture">
@@ -241,6 +262,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_agneau">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_divers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -249,6 +276,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_banane">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_vert"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -257,6 +290,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_bouteille_eau">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_papier_carton_plastique_metal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -265,6 +304,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_bouteille_vin">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_verre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -273,6 +318,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_canette_soda">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_papier_carton_plastique_metal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -281,6 +332,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_jujube">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_vert"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -289,6 +346,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_kiwai">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_vert"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -297,6 +360,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_paquet_biscuit">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_papier_carton_plastique_metal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -305,6 +374,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_patate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_vert"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -313,6 +388,19 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_pot_confiture">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_papier_carton_plastique_metal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_verre"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -321,6 +409,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture_steak">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Nourriture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#produitDechet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Dechet_menager_divers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -405,14 +499,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Plomb -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Plomb">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Batterie"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle"/>
@@ -447,6 +533,23 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable_papier_carton_plastique_metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable_papier_carton_plastique_metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable_verre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable_verre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable_verre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Poubelle_recyclable"/>
     </owl:Class>
     
 
@@ -504,6 +607,14 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_ebay"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_production"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_ampoule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_batterie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Entreprise_collecte_cartouche_imprimante"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
