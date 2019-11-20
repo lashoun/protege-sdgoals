@@ -824,29 +824,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_bretagne -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_bretagne">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_ile_de_france"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_ile_de_france -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region_ile_de_france">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ashikaga/ontologies/2019/9/SDGoals.owl#Region"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
